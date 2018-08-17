@@ -1,5 +1,7 @@
 # Xcode File Templates
-![xcode1.png]()
+
+
+![](xcode1.png)
 
 在创建一个工程或者一个类时，Xcode会根据我们的输入和选择帮我们生成不同的文件和文件内容，这个就是Xcode默认支持的模板，不幸的是，苹果并没有将模板相关的语法规则放到官方文档，但是我们可以通过Xcode本身包含的默认模板学习他的格式和语法，从而定制出更适合我们工程的文件模板。
 
@@ -36,7 +38,7 @@
 4. ___FILEBASENAME___文件就是我们的.h和.m文件的模板
 
 ### TemplateInfo.plist解析
-![templateInfo.png]()
+![templateInfo.png](templateInfo.png)
 模板中最重要的文件是TemplateInfo.plist。这是一个描述模板行为的标准Apple plist。它允许你定义要创建的一个或多个输出文件，声明用户界面的选项和输入项，并允许在生成代码时创建要使用的自定义变量。
 
 这个文件有两个不同的部分:第一个定义了通用的模板配置，第二个定义了模板的用户界面和输出变量。
@@ -85,7 +87,7 @@ Xcode的模板语法定义了一个可选的“Options”结构，用于配置�
 |  Values | 如果类型是combo, popup, classs时，需要提供的值数组 | Array<String>|
 |  RequiredOptions | 根据其他选项的值来选择启用/禁用本选项 | Array<Dictionary>|
 
-![option_type.png]()
+![option_type.png](option_type.png)
 
 ##### 需要分组的类型
 
@@ -172,10 +174,10 @@ ___FILEBASENAME___.m
 
 ## TakeAway File Templates
 我们定制的模板分类名称为TAFileTemplates，目前支持Cell、Module、ModuleViewController、Singleton四种模板。
-![xcode1.png]()
+![xcode2.png](xcode2.png)
 
 ### Cell Template
-![xcode_cell.png]()
+![xcode_cell.png](xcode_cell.png)
 
 
 ```
@@ -271,7 +273,7 @@ ___FILEBASENAME___.m
 ```
 
 ### Module Template
-![xcode_module.png]()
+![xcode_module.png](xcode_module.png)
 
 
 ___FILEBASENAME___.h
@@ -381,7 +383,7 @@ NSString *k___FILEBASENAMEASIDENTIFIER___<#Name#>Key = @"k___FILEBASENAMEASIDENT
 ```
 
 ### ModuleViewController Template
-![xcode_vc.png]()
+![xcode_vc.png](xcode_vc.png)
 
 ___FILEBASENAME___.h
 
@@ -486,7 +488,7 @@ ___FILEBASENAME___.m
 ```
 
 ### Singleton Template
-![xcode_singleton.png]()
+![xcode_singleton.png](xcode_singleton.png)
 
 ___FILEBASENAME___.h
 
@@ -550,6 +552,7 @@ static ___FILEBASENAMEASIDENTIFIER___ *sharedInstance = nil;
 ## Usage
 1. Clong Xcode-File-Templates
 2. $cd Xcode-File-Templates
+3. 根据自己团队的规范修改文件模板内容以及命名等
 3. $sh install.sh
 4. restart Xcode
 
