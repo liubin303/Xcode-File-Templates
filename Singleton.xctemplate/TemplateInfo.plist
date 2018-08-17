@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Creates a new Singleton class.</string>
+	<key>Summary</key>
+	<string>A Singleton class.</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>DefaultCompletionName</key>
+	<string>Singleton</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.m</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_classPrefix:identifier______VARIABLE_className:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>classPrefix</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>Class Prefix:</string>
+			<key>Description</key>
+			<string>The prefix of the class.</string>
+			<key>Default</key>
+			<string>TA</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the Singleton class to create</string>
+			<key>Identifier</key>
+			<string>className</string>
+			<key>Name</key>
+			<string>Class Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Manager</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>singletonStyle</string>
+			<key>Name</key>
+			<string>Singleton Style</string>
+			<key>Description</key>
+			<string>The style of Singleton to create.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>GCD</string>
+			<key>Values</key>
+			<array>
+				<string>GCD</string>
+				<string>Standard</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
